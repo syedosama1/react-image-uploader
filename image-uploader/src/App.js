@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Login from "./components/Login";
+import Registration from "./components/Registration";
+import { Routes, Route, Outlet } from "react-router-dom";
+import ResetPassword from "./components/ResetPassword";
+import Home from "./components/Home";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="outer">
+        <div className="inner">
+          <Routes>
+            <Route path="/register" element={<Registration />} />
+            <Route path="/" element={<Login />} />
+            <Route path="/reset" element={<ResetPassword />} />
+            <Route
+              path="/home"
+              element={
+                <Home>
+                  <Outlet /> {/* This renders nested routes */}
+                </Home>
+              }
+            />
+          </Routes>
+        </div>
+      </div>
     </div>
   );
 }
