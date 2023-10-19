@@ -42,7 +42,7 @@ function Registration() {
       localStorage.setItem("syedSubmissionEmail", email);
       localStorage.setItem("syedSubmissionPassword", password);
       console.log("Saved in Local Storage");
-      navigate("/login"); // Redirect to the login page after successful registration
+      navigate("/"); // Redirect to the login page after successful registration
     }
   };
 

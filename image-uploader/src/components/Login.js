@@ -32,7 +32,7 @@ function Login() {
 
 
   return (
-    <div className="login template d-flex justify-content-center align-items-center 160-w vh-100 bg-primary">
+    <div className="login template d-flex justify-content-center align-items-center  larger-card vh-100 bg-primary" >
       <div className="form_container p-5 rounded bg-white">
         <form>
           <h3 className="text-center">Log In</h3>

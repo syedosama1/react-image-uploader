@@ -79,7 +79,6 @@ function Home() {
   };
 
   return (
-    // Add these CSS classes and styles to your Home component
 
     <div className="container mt-5">
       <h1 className="text-center mb-4">Image Gallery</h1>
@@ -129,6 +128,7 @@ function Home() {
                 src={image.data_url}
                 alt=""
                 className="card-img-top rounded"
+                style={{cursor:"pointer"}}
               />
               <div className="card-body">
                 <input
