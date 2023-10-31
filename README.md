@@ -31,6 +31,10 @@ Run npm install to install dependencies.
 
 Start the development server with npm start. The application will be available at http://localhost:3000.
 
+# ScreenShot
+![image-uploader](https://github.com/syedosama1/react-image-uploader/assets/111410324/294276c7-595a-4615-bba0-03e2543beba3)
+
+
 ## Usage
 Register and log in to your account.
 
