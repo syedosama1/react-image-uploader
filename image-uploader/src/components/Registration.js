@@ -17,6 +17,7 @@ function Registration() {
   const handleButtonClick = () => {
     const message = checkValidData(
       emailRef.current.value,
+      
       passwordRef.current.value,
       phoneRef.current.value
     );
